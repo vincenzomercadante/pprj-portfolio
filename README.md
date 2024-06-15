@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# PERSONAL PORTFOLIO
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Description
 
-## Recommended IDE Setup
+As you can see, here you can find my personal portfolio that I use to show myself to the companies or other dev.
+For this Project I use : HTML, CSS, Bootstrap, SASS, Javascript, Vue.js
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+This is my first version, now developing if you have some advice please contact me on my contact on github
+
+### CHEERS
