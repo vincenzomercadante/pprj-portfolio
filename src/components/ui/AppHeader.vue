@@ -50,6 +50,7 @@ header {
     }
 
     .header-link {
+      font-size: $header-link-size;
       color: $header-txt-color;
       cursor: pointer;
       transition: color linear 0.3s;
