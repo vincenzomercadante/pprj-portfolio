@@ -1,0 +1,12 @@
+@use "./variables" as *;
+
+@mixin main-color {
+  background: rgb(73, 163, 226);
+  background: linear-gradient(
+    120deg,
+    rgba(73, 163, 226, 1) 27%,
+    rgba(166, 218, 254, 1) 83%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

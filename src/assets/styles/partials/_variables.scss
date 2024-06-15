@@ -1,2 +1,15 @@
 // ! palette
 $general-bg: #252323;
+
+$header-txt-color: #fff;
+
+$main-color: rgb(73, 163, 226);
+$main-gradient: linear-gradient(
+  120deg,
+  rgba(73, 163, 226, 1) 27%,
+  rgba(166, 218, 254, 1) 83%
+);
+
+// ! layout
+$header-height: 10vh;
+$header-title-size: 32px;
