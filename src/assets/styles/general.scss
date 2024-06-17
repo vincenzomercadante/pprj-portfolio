@@ -26,4 +26,17 @@ body {
   .container-rounded {
     @include container-rounded;
   }
+
+  .btn-link {
+    padding: 12px 1.5rem;
+    border-radius: 10px;
+    background: $main-color;
+    color: $secondary-txt-color;
+    font-size: 1rem;
+    font-weight: bold;
+
+    &:hover {
+      background: rgb(17, 140, 228);
+    }
+  }
 }

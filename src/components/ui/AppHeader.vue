@@ -40,18 +40,19 @@ header {
   height: $header-height;
 
   nav {
-    .brand-link {
-      color: $header-txt-color;
+    .brand-link,
+    .header-link {
+      color: $secondary-txt-color;
       font-size: $header-title-size;
+    }
 
+    .brand-link {
       span {
         @include main-color;
       }
     }
 
     .header-link {
-      font-size: $header-link-size;
-      color: $header-txt-color;
       cursor: pointer;
       transition: color linear 0.3s;
 

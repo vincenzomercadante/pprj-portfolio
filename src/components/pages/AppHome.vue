@@ -51,6 +51,12 @@ export default {
           <font-awesome-icon :icon="'fa-brands ' + social.icon" />
         </a>
       </div>
+
+      <!-- button -->
+      <div class="d-flex align-items-center my-3">
+        <a href="" class="btn-link">More...</a>
+        <a href="" class="btn-link ms-3">Hire Me</a>
+      </div>
     </section>
 
     <!-- profile image section -->
@@ -70,7 +76,7 @@ export default {
 .main-wrapper {
   grid-template-columns: 60% 40%;
   height: $main-height;
-  color: white;
+  color: $secondary-txt-color;
 
   .img-profile {
     height: 500px;
