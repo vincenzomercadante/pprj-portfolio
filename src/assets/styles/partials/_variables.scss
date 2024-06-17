@@ -12,7 +12,9 @@ $main-gradient: linear-gradient(
 
 // ! layout
 $header-height: 10vh;
-$header-title-size: 32px;
-$header-link-size: 20px;
-
 $main-height: calc(100vh - $header-height);
+
+// ! text
+$header-link-size: 20px;
+$header-title-size: 32px;
+$greet-size: 54px;
