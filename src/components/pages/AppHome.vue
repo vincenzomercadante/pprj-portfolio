@@ -58,8 +58,8 @@ export default {
 
       <!-- button -->
       <div class="d-flex align-items-center my-3">
-        <a href="" class="btn-link">More...</a>
-        <a href="" class="btn-link ms-3">Hire Me</a>
+        <RouterLink to="/about" class="btn-link">More...</RouterLink>
+        <RouterLink to="/hire-me" class="btn-link ms-3">Hire Me</RouterLink>
       </div>
     </section>
 
