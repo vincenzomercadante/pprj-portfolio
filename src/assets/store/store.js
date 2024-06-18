@@ -5,23 +5,23 @@ import { reactive } from "vue";
 export const store = reactive({
   headerLinks: [
     {
-      href: null,
+      href: "/",
       text: "home",
     },
     {
-      href: null,
+      href: "/about",
       text: "about",
     },
     {
-      href: null,
+      href: "/experience",
       text: "experience",
     },
     {
-      href: null,
+      href: "/projects",
       text: "projects",
     },
     {
-      href: null,
+      href: "/hire-me",
       text: "hire",
     },
   ],

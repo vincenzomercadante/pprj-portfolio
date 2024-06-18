@@ -23,11 +23,11 @@ export default {
       <!-- header link -->
       <ul class="d-flex gap-3 m-0 p-0">
         <li v-for="link in store.headerLinks">
-          <a
-            :href="link.href"
+          <RouterLink
+            :to="link.href"
             class="text-uppercase fw-bold header-link"
-            :class="link.text === 'home' ? 'active' : ''"
-            >{{ link.text }}</a
+            :class="$route.path === link.href ? 'active' : ''"
+            >{{ link.text }}</RouterLink
           >
         </li>
       </ul>
