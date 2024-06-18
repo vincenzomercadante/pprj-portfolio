@@ -23,9 +23,12 @@ export default {
       <!-- header link -->
       <ul class="d-flex gap-3 m-0 p-0">
         <li v-for="link in store.headerLinks">
-          <a :href="link.href" class="text-uppercase fw-bold header-link">{{
-            link.text
-          }}</a>
+          <a
+            :href="link.href"
+            class="text-uppercase fw-bold header-link"
+            :class="link.text === 'home' ? 'active' : ''"
+            >{{ link.text }}</a
+          >
         </li>
       </ul>
     </nav>
@@ -53,10 +56,15 @@ header {
     }
 
     .header-link {
+      font-size: $header-link-size;
       cursor: pointer;
       transition: color linear 0.3s;
 
       &:hover {
+        color: $main-color;
+      }
+
+      &.active {
         color: $main-color;
       }
     }

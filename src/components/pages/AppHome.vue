@@ -28,17 +28,21 @@ export default {
     >
       <!-- greeting text -->
       <div class="d-flex align-items-center">
-        <p>Hi visitor</p>
-        <!-- greeting gif -->
-        <img
-          src="../../assets/img/cute-wave-emoji-hand-59s88kk0zj3xho40.gif"
-          alt="hi gif"
-          class="greeting-gif ms-1"
-        />
+        <p>
+          Hi visitor
+          <!-- greeting gif -->
+          <img
+            src="../../assets/img/cute-wave-emoji-hand-59s88kk0zj3xho40.gif"
+            alt="hi gif"
+            class="greeting-gif ms-1"
+          />
+          <br />
+          I'm <span>Vincenzo</span><br />
+          <!-- text with auto typed generation -->
+          <span id="auto-typed"></span>
+          Web Developer
+        </p>
       </div>
-      <p>I'm <span>Vincenzo</span></p>
-      <!-- text with auto typed generation -->
-      <p><span id="auto-typed"></span> Web Developer</p>
 
       <!-- social links -->
       <div class="d-flex gap-4 my-3">
