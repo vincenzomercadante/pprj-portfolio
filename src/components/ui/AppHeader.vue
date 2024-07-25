@@ -23,12 +23,9 @@ export default {
       <!-- header link -->
       <ul class="d-flex gap-3 m-0 p-0">
         <li v-for="link in store.headerLinks">
-          <RouterLink
-            :to="link.href"
-            class="text-uppercase fw-bold header-link"
-            :class="$route.path === link.href ? 'active' : ''"
-            >{{ link.text }}</RouterLink
-          >
+          <a :href="link.href" class="text-uppercase fw-bold header-link">{{
+            link.text
+          }}</a>
         </li>
       </ul>
     </nav>
@@ -41,6 +38,9 @@ export default {
 
 header {
   height: $header-height;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   nav {
     .brand-link,

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="main-wrapper d-grid">
+  <div class="main-wrapper d-grid" id="home">
     <!-- left section with text links and button -->
     <section
       class="d-flex justify-content-center align-items-start flex-column"
@@ -58,18 +58,17 @@ export default {
 
       <!-- button -->
       <div class="d-flex align-items-center my-3">
-        <RouterLink to="/about" class="btn-link">More...</RouterLink>
-        <RouterLink to="/hire-me" class="btn-link ms-3">Hire Me</RouterLink>
+        <!-- router link button to about and hire page -->
+        <a href="#about" class="btn-link">More...</a>
+        <a href="#hire" class="btn-link ms-3">Hire Me</a>
       </div>
     </section>
 
     <!-- profile image section -->
     <section class="d-flex align-items-center justify-content-center">
-      <div class="container-rounded position-relative img-profile">
-        <figure class="m-0 position-absolute">
-          <img src="../../assets/img/personal-image.png" alt="profile image" />
-        </figure>
-      </div>
+      <figure class="m-0 profile-image">
+        <img src="../../assets/img/personal-image.png" alt="profile image" />
+      </figure>
     </section>
   </div>
 </template>
@@ -82,37 +81,14 @@ export default {
   height: $main-height;
   color: $secondary-txt-color;
 
-  .img-profile {
-    height: 500px;
-
-    &::after {
-      content: "";
-      height: 500px;
-      aspect-ratio: 1;
-      border: 10px dashed $main-color;
-      border-radius: 50%;
-      animation-name: spin;
-      animation-duration: 30000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
-
-    figure {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -57%);
-      border-radius: 150px;
-      overflow: hidden;
-
-      img {
-        width: 345px;
-        height: 495px;
-      }
-    }
-  }
-
   .greeting-gif {
     height: 60px;
+  }
+
+  .profile-image img {
+    height: 800px;
+    transform: translateY(-60px);
+    filter: drop-shadow(0 0 0.75rem $main-color);
   }
 
   p {
@@ -136,15 +112,6 @@ export default {
     &:hover {
       color: $main-color;
     }
-  }
-}
-
-@keyframes spin {
-  from {
-    rotate: (0deg);
-  }
-  to {
-    rotate: (360deg);
   }
 }
 </style>
