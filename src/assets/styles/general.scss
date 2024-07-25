@@ -18,10 +18,6 @@ body {
     list-style: none;
   }
 
-  main {
-    height: $main-height;
-  }
-
   .container-rounded {
     @include container-rounded;
   }

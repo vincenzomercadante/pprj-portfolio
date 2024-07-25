@@ -9,5 +9,6 @@ export default {};
 <style lang="scss" scoped>
 #hire {
   height: 100vh;
+  color: white;
 }
 </style>

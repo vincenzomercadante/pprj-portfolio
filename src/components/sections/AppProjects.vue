@@ -9,5 +9,6 @@ export default {};
 <style lang="scss" scoped>
 #projects {
   height: 100vh;
+  color: white;
 }
 </style>
