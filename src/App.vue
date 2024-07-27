@@ -29,6 +29,7 @@ export default {
       <AppHire />
     </div>
   </main>
+  <div class="go-up-arrow"></div>
 </template>
 
 <style lang="scss">

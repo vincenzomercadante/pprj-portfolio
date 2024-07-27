@@ -11,10 +11,12 @@ $main-gradient: linear-gradient(
 );
 
 // ! layout
-$header-height: 10vh;
+$header-height: 7vh;
 $main-height: calc(100vh - $header-height);
 
 // ! text
 $header-link-size: 20px;
 $header-title-size: 32px;
 $greet-size: 54px;
+
+$section-padding: $header-height;

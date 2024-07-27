@@ -3,7 +3,9 @@ export default {};
 </script>
 
 <template>
-  <section id="experience">Experience</section>
+  <section id="experience" class="page-section">
+    <h2 class="section-title fw-semibold">experience</h2>
+  </section>
 </template>
 
 <style lang="scss" scoped>

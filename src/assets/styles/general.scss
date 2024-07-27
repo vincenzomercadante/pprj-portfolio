@@ -34,4 +34,16 @@ body {
       background: rgb(17, 140, 228);
     }
   }
+
+  .page-section {
+    padding-top: $section-padding;
+
+    .section-title {
+      font-size: 3rem;
+      font-style: italic;
+      color: $main-color;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
 }
