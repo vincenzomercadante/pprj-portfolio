@@ -46,4 +46,22 @@ body {
       text-transform: uppercase;
     }
   }
+
+  .go-up-arrow {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 1rem;
+
+    background-color: $main-color;
+    color: white;
+
+    font-weight: bold;
+    font-size: 1rem;
+  }
 }

@@ -7,6 +7,12 @@ import AppHire from "./components/sections/AppHire.vue";
 import AppProjects from "./components/sections/AppProjects.vue";
 
 export default {
+  data() {
+    return {
+      isVisible: false,
+    };
+  },
+
   components: {
     AppHeader,
     AppHome,
@@ -14,6 +20,16 @@ export default {
     AppExperience,
     AppHire,
     AppProjects,
+  },
+
+  methods: {
+    handleScroll() {
+      this.isVisible = window.scrollY > 500 ? true : false;
+    },
+  },
+
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   },
 };
 </script>
@@ -29,7 +45,10 @@ export default {
       <AppHire />
     </div>
   </main>
-  <div class="go-up-arrow"></div>
+  <!-- scroll top button -->
+  <a v-if="isVisible" href="#" class="go-up-arrow" id="returnTop">
+    <font-awesome-icon icon="fa-solid fa-chevron-up" />
+  </a>
 </template>
 
 <style lang="scss">
