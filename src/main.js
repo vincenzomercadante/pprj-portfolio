@@ -19,10 +19,21 @@ import {
   faChevronUp,
   faLock,
   faDownload,
+  faPhone,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faLinkedin, faGithub, faInstagram, faChevronUp, faLock, faDownload);
+library.add(
+  faLinkedin,
+  faGithub,
+  faInstagram,
+  faChevronUp,
+  faLock,
+  faDownload,
+  faPhone,
+  faEnvelope
+);
 
 // create app
 const app = createApp(App);
