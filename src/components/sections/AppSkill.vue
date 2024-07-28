@@ -19,9 +19,9 @@ export default {
     <h2 class="section-title fw-semibold">skill</h2>
     <!-- section paragraph -->
     <p class="text-center fw-semibold fs-4 fst-italic mt-4">
-      In this section you can find all of my programming skill. <br />As you can
-      see some of them are locked, are locked because i haven't reached that
-      skill yet, but I'm going to learn it.
+      In this section, you can find all of my programming skills. As you can
+      see, some of them are locked because I haven't reached that skill level
+      yet, but I am planning to learn them.
     </p>
     <!-- skill cards container -->
     <div class="container my-5">
