@@ -88,7 +88,7 @@ export default {};
           <a
             href="../../../src/assets/file-to-download/Vincenzo Mercadante_CV.pdf"
             download="Vincenzo-Mercadante_CV.pdf"
-            class="position-relative d-block w-100 h-100 cv-download"
+            class="position-relative d-flex w-100 h-100 justify-content-center cv-download"
             ><img
               src="../../../src/assets/file-to-download/cv.png"
               alt="cv image"
@@ -119,7 +119,7 @@ export default {};
 }
 
 .btn-link {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .cv-download {
@@ -131,6 +131,10 @@ export default {};
     transition: opacity 0.3s linear;
     color: white;
     font-weight: bold;
+  }
+
+  img {
+    height: 800px;
   }
 
   &:hover .layover {

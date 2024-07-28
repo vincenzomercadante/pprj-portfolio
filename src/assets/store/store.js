@@ -125,4 +125,8 @@ export const store = reactive({
       image: "mongodb.png",
     },
   ],
+
+  profileImage: "../../assets/img/profile-photos/profile1.JPG",
+
+  activeAbout: "Bio",
 });
