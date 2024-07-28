@@ -47,4 +47,82 @@ export const store = reactive({
       icon: "fa-instagram",
     },
   ],
+
+  skillCards: [
+    {
+      name: "GIT",
+      status: "unlocked",
+      image: "git.png",
+    },
+    {
+      name: "HTML",
+      status: "unlocked",
+      image: "html.png",
+    },
+    {
+      name: "CSS",
+      status: "unlocked",
+      image: "css.png",
+    },
+    {
+      name: "Bootstrap",
+      status: "unlocked",
+      image: "bootstrap.png",
+    },
+    {
+      name: "SASS",
+      status: "unlocked",
+      image: "sass.png",
+    },
+    {
+      name: "Javascript",
+      status: "unlocked",
+      image: "javascript.png",
+    },
+    {
+      name: "Vue.js",
+      status: "unlocked",
+      image: "vue.png",
+    },
+    {
+      name: "React",
+      status: "locked",
+      image: "react.png",
+    },
+    {
+      name: "Typescript",
+      status: "locked",
+      image: "typescript.png",
+    },
+    {
+      name: "PHP",
+      status: "unlocked",
+      image: "php.png",
+    },
+    {
+      name: "Laravel",
+      status: "unlocked",
+      image: "laravel.png",
+    },
+    {
+      name: "MySQL",
+      status: "unlocked",
+      image: "mysql.png",
+    },
+    {
+      name: "Node.js",
+      status: "locked",
+      image: "node.png",
+    },
+    {
+      name: "Express.js",
+      status: "locked",
+      image: "express.png",
+    },
+    {
+      name: "MongoDB",
+      status: "locked",
+      image: "mongodb.png",
+    },
+  ],
 });
