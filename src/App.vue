@@ -5,6 +5,7 @@ import AppAbout from "./components/sections/AppAbout.vue";
 import AppExperience from "./components/sections/AppExperience.vue";
 import AppHire from "./components/sections/AppHire.vue";
 import AppProjects from "./components/sections/AppProjects.vue";
+import AppSkill from "./components/sections/AppSkill.vue";
 
 export default {
   data() {
@@ -20,6 +21,7 @@ export default {
     AppExperience,
     AppHire,
     AppProjects,
+    AppSkill,
   },
 
   methods: {
@@ -37,13 +39,12 @@ export default {
 <template>
   <AppHeader />
   <main>
-    <div class="container">
-      <AppHome />
-      <AppAbout />
-      <AppExperience />
-      <AppProjects />
-      <AppHire />
-    </div>
+    <AppHome />
+    <AppAbout />
+    <AppSkill />
+    <AppExperience />
+    <AppProjects />
+    <AppHire />
   </main>
   <!-- scroll top button -->
   <a v-if="isVisible" href="#" class="go-up-arrow" id="returnTop">
