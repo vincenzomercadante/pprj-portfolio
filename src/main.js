@@ -15,10 +15,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 /* import specific icons */
-import { faChevronUp, faLock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronUp,
+  faLock,
+  faDownload,
+} from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faLinkedin, faGithub, faInstagram, faChevronUp, faLock);
+library.add(faLinkedin, faGithub, faInstagram, faChevronUp, faLock, faDownload);
 
 // create app
 const app = createApp(App);

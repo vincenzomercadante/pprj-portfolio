@@ -17,12 +17,12 @@ export const store = reactive({
       text: "skill",
     },
     {
-      href: "#projects",
-      text: "projects",
-    },
-    {
       href: "#experience",
       text: "experience",
+    },
+    {
+      href: "#projects",
+      text: "projects",
     },
     {
       href: "#hire",

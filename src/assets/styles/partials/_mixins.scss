@@ -18,3 +18,17 @@
   aspect-ratio: 1;
   border-radius: 50%;
 }
+
+@mixin layover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba($general-bg, 0.7);
+}
