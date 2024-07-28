@@ -27,7 +27,7 @@ export default {
       skill yet, but I am learning them.
     </p>
     <!-- skill cards container -->
-    <div class="container my-5">
+    <div class="container my-4">
       <div class="row row-cols-5 g-4 justify-content-center">
         <!-- generate a skill card for every skill in the array -->
         <div
@@ -50,7 +50,6 @@ export default {
 @use "../../assets/styles/partials/variables" as *;
 
 #skill {
-  height: 100vh;
   color: white;
 
   .inner {

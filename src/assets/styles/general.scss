@@ -36,6 +36,8 @@ body {
   }
 
   .page-section {
+    padding-top: $section-padding;
+
     .section-title {
       font-size: 3rem;
       font-style: italic;

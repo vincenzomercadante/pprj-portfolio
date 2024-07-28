@@ -129,4 +129,39 @@ export const store = reactive({
   profileImage: "../../assets/img/profile-photos/profile1.JPG",
 
   activeAbout: "Bio",
+
+  hobbyCards: [
+    {
+      image: "../../assets/img/hobby-photos/animemanga.jpg",
+      title: "Anime/Manga",
+    },
+    {
+      image: "../../assets/img/hobby-photos/travel.jpg",
+      title: "Travel",
+    },
+    {
+      image: "../../assets/img/hobby-photos/photography.jpg",
+      title: "Photography",
+    },
+    {
+      image: "../../assets/img/hobby-photos/d&d.jpg",
+      title: "D&D",
+    },
+    {
+      image: "../../assets/img/hobby-photos/tcg.jpg",
+      title: "TCG",
+    },
+    {
+      image: "../../assets/img/hobby-photos/videogames.jpg",
+      title: "Videogames",
+    },
+    {
+      image: "../../assets/img/hobby-photos/gym.jpg",
+      title: "Gym",
+    },
+    {
+      image: "../../assets/img/hobby-photos/calcio.jpg",
+      title: "Football",
+    },
+  ],
 });
