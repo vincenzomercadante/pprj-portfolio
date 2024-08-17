@@ -40,7 +40,7 @@ export default {
   >
     <!-- section's title -->
     <h2 class="section-title fw-semibold">about me</h2>
-    <div class="container mt-5 overflow-y-hidden">
+    <div class="container overflow-y-hidden">
       <div class="row">
         <!-- profile-image's col -->
         <div class="col-6 d-flex align-items-center justify-content-center">
@@ -55,52 +55,77 @@ export default {
         <div class="col-6 d-flex flex-column align-content-center">
           <!-- bio section -->
           <section class="mb-3">
-            <!-- bio title -->
-            <h3 class="text-center text-uppercase">bio</h3>
-            <!-- bio description -->
-            <p class="text-center px-3 fs-5">
-              I am a 23-year-old who has always been passionate about coding and
-              technology. After a year and a half as a Network Engineer, I
-              decided to bet on my passion for development and enroll in a Full
-              Stack Web Developer course where I learned the basics. My journey
-              begins now, and I hope it will worth it.
-            </p>
-          </section>
+            <header class="mb-5">
+              <nav class="about-nav">
+                <ul
+                  class="d-flex align-items-center justify-content-center gap-4"
+                >
+                  <li
+                    class="text-uppercase fst-italic fw-semibold fs-3"
+                    :class="store.activeAbout == 'bio' ? 'active' : ''"
+                    @click="changeActiveAboutNav('bio')"
+                  >
+                    Bio & goals
+                  </li>
+                  <li
+                    class="text-uppercase fst-italic fw-semibold fs-3"
+                    :class="store.activeAbout == 'hobby' ? 'active' : ''"
+                    @click="changeActiveAboutNav('hobby')"
+                  >
+                    Hobby
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            <main>
+              <section v-if="store.activeAbout == 'bio'">
+                <!-- bio title -->
+                <h3 class="text-center text-uppercase">bio</h3>
+                <!-- bio description -->
+                <p class="text-center px-3 fs-5">
+                  I am a 23-year-old who has always been passionate about coding
+                  and technology. After a year and a half as a Network Engineer,
+                  I decided to bet on my passion for development and enroll in a
+                  Full Stack Web Developer course where I learned the basics. My
+                  journey begins now, and I hope it will worth it.
+                </p>
+                <!-- goals section -->
+                <section class="my-5 px-3 fs-5">
+                  <!-- goals title -->
+                  <h3 class="text-center text-uppercase">goals</h3>
+                  <!-- goals introduction -->
+                  <p class="text-center">
+                    I believe this journey will be long, but I already have some
+                    goals to reach:
+                  </p>
+                  <!-- goals list -->
+                  <ul class="goals-list">
+                    <!-- goal -->
+                    <li>
+                      Become proficient in web development as quickly as
+                      possible
+                    </li>
+                    <!-- goal -->
+                    <li>
+                      Become a person whose decisions are important for the
+                      projects
+                    </li>
+                    <!-- goal -->
+                    <li>Reach a managerial position</li>
+                  </ul>
+                </section>
+              </section>
 
-          <!-- goals section -->
-          <section class="my-3 px-3">
-            <!-- goals title -->
-            <h3 class="text-center text-uppercase">goals</h3>
-            <!-- goals introduction -->
-            <p class="text-center">
-              I believe this journey will be long, but I already have some goals
-              to reach:
-            </p>
-            <!-- goals list -->
-            <ul>
-              <!-- goal -->
-              <li>
-                Become proficient in web development as quickly as possible
-              </li>
-              <!-- goal -->
-              <li>
-                Become a person whose decisions are important for the projects
-              </li>
-              <!-- goal -->
-              <li>Reach a managerial position</li>
-            </ul>
-          </section>
-
-          <!-- hobby section -->
-          <section class="my-3">
-            <!-- hobby title -->
-            <h3 class="text-center text-uppercase">hobby</h3>
-            <div class="row g-3 overflow-y-scroll mt-2 hobby-container">
-              <!-- generation of hobby cards -->
-              <div v-for="hobby in store.hobbyCards" class="col-4">
-                <HobbyCard :hobby="hobby" />
-              </div>
-            </div>
+              <!-- hobby section -->
+              <section v-if="store.activeAbout == 'hobby'">
+                <div class="row g-3 mt-2 justify-content-center">
+                  <!-- generation of hobby cards -->
+                  <div v-for="hobby in store.hobbyCards" class="col-4">
+                    <HobbyCard :hobby="hobby" />
+                  </div>
+                </div>
+              </section>
+            </main>
           </section>
         </div>
       </div>
@@ -120,8 +145,13 @@ export default {
     object-fit: cover;
   }
 
-  .about-header li {
+  .about-nav li {
     cursor: pointer;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: $main-color;
+    }
 
     &.active {
       color: $main-color;
@@ -133,12 +163,8 @@ export default {
     color: $main-color;
   }
 
-  ul {
-    list-style: disc;
-  }
-
-  .hobby-container {
-    height: 300px;
+  .goals-list {
+    list-style-type: disc;
   }
 }
 </style>

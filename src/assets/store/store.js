@@ -128,7 +128,7 @@ export const store = reactive({
 
   profileImage: "../../assets/img/profile-photos/profile1.JPG",
 
-  activeAbout: "Bio",
+  activeAbout: "bio",
 
   hobbyCards: [
     {
