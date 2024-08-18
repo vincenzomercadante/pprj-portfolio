@@ -33,7 +33,7 @@ export default {};
           </div>
 
           <!-- cellular -->
-          <p class="m-0 fs-5">+39 3458430577</p>
+          <p class="m-0 fs-5 phone-number">+39 3458430577</p>
 
           <!-- linkedin detail -->
           <div class="mt-4 d-flex align-items-center gap-2">
@@ -104,6 +104,10 @@ export default {};
 
 .contact-detail h3 {
   color: $main-color;
+}
+
+.phone-number {
+  color: $info-txt-color;
 }
 
 .cv-download {

@@ -78,7 +78,10 @@ export default {
               </nav>
             </header>
             <main>
-              <section v-if="store.activeAbout == 'bio'">
+              <section
+                v-if="store.activeAbout == 'bio'"
+                :class="store.activeAbout != 'bio' ? 'slideout' : 'slidein'"
+              >
                 <!-- bio title -->
                 <h3 class="text-center text-uppercase">bio</h3>
                 <!-- bio description -->
@@ -117,7 +120,10 @@ export default {
               </section>
 
               <!-- hobby section -->
-              <section v-if="store.activeAbout == 'hobby'">
+              <section
+                v-if="store.activeAbout == 'hobby'"
+                :class="store.activeAbout != 'hobby' ? 'slideout' : 'slidein'"
+              >
                 <div class="row g-3 mt-2 justify-content-center">
                   <!-- generation of hobby cards -->
                   <div v-for="hobby in store.hobbyCards" class="col-4">
@@ -165,6 +171,32 @@ export default {
 
   .goals-list {
     list-style-type: disc;
+  }
+
+  .slidein {
+    animation: slidein 0.6s linear;
+  }
+
+  .slideout {
+    animation: slideout 0.3s linear;
+  }
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 </style>
