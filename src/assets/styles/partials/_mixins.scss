@@ -19,6 +19,12 @@
   border-radius: 50%;
 }
 
+@mixin center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin layover {
   position: absolute;
   top: 0;

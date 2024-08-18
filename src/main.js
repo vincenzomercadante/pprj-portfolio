@@ -21,6 +21,7 @@ import {
   faDownload,
   faPhone,
   faEnvelope,
+  faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
@@ -32,7 +33,8 @@ library.add(
   faLock,
   faDownload,
   faPhone,
-  faEnvelope
+  faEnvelope,
+  faPlay
 );
 
 // create app
