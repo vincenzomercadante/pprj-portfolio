@@ -9,12 +9,15 @@ export default {};
     <div class="container my-5">
       <div class="row">
         <div class="col-4">
+          <!-- projects -->
           <section class="projects-section">
+            <!-- video section -->
             <div class="video-carousel">
               <div class="video-player-placeholder">
                 <font-awesome-icon icon="fa-solid fa-play" />
               </div>
             </div>
+            <!-- paragraph section -->
             <div class="paragraph-carousel p-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio voluptates ea sint, reprehenderit doloribus enim itaque
@@ -24,12 +27,15 @@ export default {};
           </section>
         </div>
         <div class="col-4">
+          <!-- projects -->
           <section class="projects-section">
+            <!-- video section -->
             <div class="video-carousel">
               <div class="video-player-placeholder">
                 <font-awesome-icon icon="fa-solid fa-play" />
               </div>
             </div>
+            <!-- paragraph section -->
             <div class="paragraph-carousel p-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio voluptates ea sint, reprehenderit doloribus enim itaque
@@ -39,12 +45,15 @@ export default {};
           </section>
         </div>
         <div class="col-4">
+          <!-- projects -->
           <section class="projects-section">
+            <!-- video section -->
             <div class="video-carousel">
               <div class="video-player-placeholder">
                 <font-awesome-icon icon="fa-solid fa-play" />
               </div>
             </div>
+            <!-- paragraph section -->
             <div class="paragraph-carousel p-3">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio voluptates ea sint, reprehenderit doloribus enim itaque
